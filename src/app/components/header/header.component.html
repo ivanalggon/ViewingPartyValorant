@@ -1,0 +1,14 @@
+<button class="btn btn-primary"(click)="unClic()">Se ha pulsado "{{pulsacionesDelBoton}}" veces</button>
+<p class="alert alert-primary"> El boton ha sido clicado una cantidad
+    @if(pulsacionesDelBoton%2==0){
+      <span class="bg-success">par</span>
+
+    }
+    @else{
+      <span class="bg-danger">impar</span>
+    }
+</p>
+
+<header>
+  <app-menu></app-menu>
+</header>

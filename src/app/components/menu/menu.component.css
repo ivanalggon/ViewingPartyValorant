@@ -1,0 +1,35 @@
+#btnRed,#btnBlue,#btnGreen{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+#btnRed{
+    background-color: red;
+    color: #fff;
+}
+#btnBlue{
+    background-color: blue;
+    color: #fff;
+}
+#btnGreen{
+    background-color: green;
+    color: #fff;
+}
+#btnRed:hover{
+    background-color: rgb(255, 97, 97);
+    color: #fff;
+}
+#btnBlue:hover{
+    background-color: rgb(80, 80, 255);
+    color: #fff;
+}
+#btnGreen:hover{
+    background-color: rgb(64, 138, 64);
+    color: #fff;
+}
