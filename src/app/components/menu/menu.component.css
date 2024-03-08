@@ -1,35 +1,74 @@
-#btnRed,#btnBlue,#btnGreen{
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #000;
-    cursor: pointer;
-    background-color: #fff;
-    color: #000;
-    font-size: 20px;
-    border-radius: 5px;
+nav {
+    padding: 20px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+ 
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 4vh;
     transition: all 0.3s;
 }
-#btnRed{
-    background-color: red;
-    color: #fff;
+nav ul li a:hover {
+    color: #d40000;
 }
-#btnBlue{
-    background-color: blue;
-    color: #fff;
-}
-#btnGreen{
-    background-color: green;
-    color: #fff;
-}
-#btnRed:hover{
-    background-color: rgb(255, 97, 97);
-    color: #fff;
-}
-#btnBlue:hover{
-    background-color: rgb(80, 80, 255);
-    color: #fff;
-}
-#btnGreen:hover{
-    background-color: rgb(64, 138, 64);
-    color: #fff;
-}
+.menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin-right: 70px;
+  }
+  
+  .menu a {
+    position: relative;
+    display: block;
+    padding: 5px;
+  }
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #d40000;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .menu[data-animation="to-left"] a::before {
+    transform-origin: right;
+  }
+  
+  .menu[data-animation="center"] a::before {
+    transform-origin: center;
+  }
+  
+  .menu[data-animation="bonus"] a::before {
+    transform-origin: right;
+  }
+  
+  .menu[data-animation="bonus"] a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+  }
+

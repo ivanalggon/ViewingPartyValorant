@@ -1,28 +1,6 @@
 <app-header></app-header>
 
-
-  <div class="content">
-    <div class="left-side">
-     
-      <h1>Hello, {{ name }}</h1>
-      <h2>This is a {{ title }}</h2>
-      <h3>¿Quieres una {{ frutas[1].name }} que cuesta {{ frutas[1].price }} monedas?</h3>
-      <p>Congratulations! Your app is running. 🎉</p>
-    </div>
-    
-    <div class="right-side">
-      <div class="pill-group">
-
-        @for (item of [
-          { title: 'Explore the Docs', link: 'https://angular.dev' },
-          { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
-          { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
-          { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
-        ]; track item.title) {}
-      </div>
-    </div>
-  </div>
+<app-body></app-body>
 
 <app-footer></app-footer>
 <router-outlet />

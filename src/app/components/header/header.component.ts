@@ -7,6 +7,7 @@ import { MenuComponent } from '../menu/menu.component';
   templateUrl: './header.component.html',
   providers: [],
   imports : [MenuComponent],
+  styleUrls: ['./header.component.css']
 })
 
 export class HeaderComponent {

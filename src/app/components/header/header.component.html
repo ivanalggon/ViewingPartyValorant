@@ -1,14 +1,11 @@
-<button class="btn btn-primary"(click)="unClic()">Se ha pulsado "{{pulsacionesDelBoton}}" veces</button>
-<p class="alert alert-primary"> El boton ha sido clicado una cantidad
-    @if(pulsacionesDelBoton%2==0){
-      <span class="bg-success">par</span>
-
-    }
-    @else{
-      <span class="bg-danger">impar</span>
-    }
-</p>
-
 <header>
+  <a href="#home"><img src="../../../assets/logoVPV.png" alt="logoVPV" id="logoVPV"></a>
   <app-menu></app-menu>
+  <div class="divButtons">
+    <ul class="menu" data-animation="bonus">
+      <button href="#carrito" id="btnCarrito">🛒</button>
+    <button href="#perfil" id="btnPerfil">👤</button>
+    </ul>
+    
+  </div>
 </header>
