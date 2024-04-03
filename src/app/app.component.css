@@ -17,6 +17,11 @@ h1 {
     "Segoe UI Symbol";
 }
 
+h2{
+  font-size: 200px;
+  color: var(--gray-900);
+}
+
 p {
   margin: 0;
   color: var(--gray-700);

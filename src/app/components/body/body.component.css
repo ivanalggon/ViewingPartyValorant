@@ -1,3 +1,89 @@
 .container{
     margin-top: 20px;
 }
+ #imgHome{
+    height: auto;
+    width: 100%;
+    filter: grayscale(60%);
+    filter: opacity(80%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+}
+
+section#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact, #noticias, #reservasDiv, #tiendaDiv{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 7vh;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    color: white;
+}
+.contact h2, #noticias h2, #reservasDiv h2, #tiendaDiv h2{
+    color: white;
+    font-size: 5vh;
+    margin-bottom: 20px;
+}
+.contact p, #noticias p, #reservasDiv p, #tiendaDiv p{
+    font-size: 1.2em;
+}
+
+
+
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container {
+    background-color: #000000;
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input-group label {
+    text-align: left;
+    width: 200px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.input-group input[type="submit"] {
+    background: #000;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.input-group input[type="submit"]:hover {
+    background: #000;
+    color: #d40000;
+}
+
+.iframe-container {
+    flex: 1;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}

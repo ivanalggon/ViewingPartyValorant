@@ -1,0 +1,7 @@
+<div class="reservas">
+    <div class="card" *ngFor="let reserva of reservas">  <img src="{{ reserva.imagen }}" alt="Evento Imagen" style="height: 10em; max-width: 300px;">
+        <div class="card-body">
+            <h2 class="event-title">{{ reserva.titulo }}</h2> <p class="event-details"><b>Fecha:</b> {{ reserva.fecha }}</p> <p class="event-details"><b>Hora:</b> {{ reserva.hora }}</p> <p class="event-details"><b>Ubicación:</b> {{ reserva.ubicacion }}</p> <button class="btn">Reservar Entradas</button>
+        </div>
+    </div>
+</div>

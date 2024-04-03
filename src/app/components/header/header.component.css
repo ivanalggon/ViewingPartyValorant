@@ -26,16 +26,20 @@ header{
 }
 #btnCarrito{
     background-color: transparent;
-    font-size: 40px;
+    font-size: 4vh;
+    
 }
 #btnPerfil{
     background-color: transparent;
-    font-size: 40px;
+    font-size: 4vh;
 }
 
+.header.negro {
+    background-color: black;
+    color: white;
+}
 
-.menu[data-animation="bonus"] a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+.header.gris {
+    background-color: rgb(82, 82, 82);
+    color: black;
 }

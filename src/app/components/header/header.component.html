@@ -1,11 +1,10 @@
-<header>
+<header class="header">
   <a href="#home"><img src="../../../assets/logoVPV.png" alt="logoVPV" id="logoVPV"></a>
   <app-menu></app-menu>
   <div class="divButtons">
     <ul class="menu" data-animation="bonus">
-      <button href="#carrito" id="btnCarrito">🛒</button>
-    <button href="#perfil" id="btnPerfil">👤</button>
+      <button (click)="cambiarColor('gris')"  id="btnCarrito">🛒</button>
+      <button (click)="cambiarColor('negro')" id="btnPerfil">👤</button>
     </ul>
-    
   </div>
 </header>

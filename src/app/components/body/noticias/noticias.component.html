@@ -1,0 +1,35 @@
+<div class="noticias-ultimas">
+    <h3>Últimas noticias</h3>
+    <ul>
+      <li *ngFor="let noticia of noticiasUltimas">
+        <a href="{{ noticia.enlace }}">{{ noticia.titulo }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="noticias-eventos">
+    <h3>Próximos eventos</h3>
+    <ul>
+      <li *ngFor="let evento of eventosProximos">
+        <p>{{ evento.fecha }} - {{ evento.nombre }}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="noticias-tabla">
+    <h3>Información de Valorant</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dato of datosValorant">
+          <td>{{ dato.nombre }}</td>
+          <td>{{ dato.descripcion }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

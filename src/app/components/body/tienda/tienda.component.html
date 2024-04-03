@@ -1,0 +1,16 @@
+<div class="containerTienda">
+<div class="tarjeta-producto" *ngFor="let producto of productos">
+    <div class="imagen-producto">
+    <img id="imgProduct" src="{{ producto.imagen }}" alt="{{ producto.nombre }}" style="height: 20em; max-width: 250px;">
+    </div>
+    <div class="informacion-producto">
+    <h2>{{ producto.nombre }}</h2>
+    <p>{{ producto.descripcion }}</p>
+    <span class="precio">{{ producto.precio }}€</span>
+    <div class="acciones-producto">
+        <button class="boton-agregar-carrito">Añadir al carrito</button>
+        <button class="boton-ver-detalles">Ver detalles</button>
+    </div>
+    </div>
+</div>
+</div>

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { MenuComponent } from '../menu/menu.component';
+import { Component, OnInit } from '@angular/core';
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-header',
@@ -10,11 +10,19 @@ import { MenuComponent } from '../menu/menu.component';
   styleUrls: ['./header.component.css']
 })
 
-export class HeaderComponent {
-  
-  pulsacionesDelBoton:number = 0;
+export class HeaderComponent implements OnInit{
+  constructor() { }
 
-  unClic(){
-    this.pulsacionesDelBoton++;
+  ngOnInit(): void {
+  }
+
+  cambiarColor(color: string): void {
+    this.header.classList.remove('negro', 'gris');
+    this.header.classList.add(color);
+    
+  }
+
+  private get header(): HTMLElement {
+    return document.querySelector('.header') as HTMLElement;
   }
 }

@@ -1,0 +1,47 @@
+.containerTienda {
+    display: flex;
+    flex-direction: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#imgProduct {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.tarjeta-producto{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+    color: white;
+    text-align: center;
+    transition: all 0.3s;
+
+    max-width: 300px;
+}
+.informacion-producto{
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.2em;
+    width: 100%;
+  }
+  button:hover {
+    background-color: #111111;
+    color: #d40000;
+  }
