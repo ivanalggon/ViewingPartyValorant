@@ -24,3 +24,59 @@ table td{
     text-align: center;
     border: 1px solid rgb(0, 0, 0);
 }
+
+
+.tarjeta {
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .cabecera {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+ 
+  
+  .cabecera h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .cabecera h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .cuerpo {
+    padding: 10px;
+  }
+  
+  .cuerpo p {
+    margin-bottom: 10px;
+  }
+  
+  .cuerpo a {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .pie {
+    background-color: #ccc;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .pie p {
+    margin-bottom: 5px;
+  }
+  
