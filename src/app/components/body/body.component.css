@@ -1,6 +1,4 @@
-.container{
-    margin-top: 20px;
-}
+
  #imgHome{
     height: auto;
     width: 100%;
@@ -39,10 +37,7 @@ section#home{
 
 
 
-.content-container {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .input-container {
     background-color: #000000;
