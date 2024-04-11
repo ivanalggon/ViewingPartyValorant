@@ -59,9 +59,10 @@ footer .containerPegi{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 2%;
 }
 footer .containerPegi img{
-    height: 6em;
+    height: 4em;
     margin-right: 10px;
 }
 

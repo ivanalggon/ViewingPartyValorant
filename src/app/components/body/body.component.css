@@ -12,7 +12,7 @@ section#home{
     align-items: center;
 }
 
-.contact, #noticias, #reservasDiv, #tiendaDiv{
+.contact, #reservasDiv, #tiendaDiv{
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
