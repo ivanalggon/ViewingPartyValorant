@@ -1,4 +1,3 @@
-
  #imgHome{
     height: auto;
     width: 100%;
@@ -32,11 +31,6 @@ section#home{
 .contact p, #noticias p, #reservasDiv p, #tiendaDiv p{
     font-size: 1.2em;
 }
-
-
-
-
-
 
 
 .input-container {

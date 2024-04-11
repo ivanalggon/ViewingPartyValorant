@@ -20,10 +20,12 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 4vh;
+    cursor: pointer;  
     transition: all 0.3s;
 }
 nav ul li a:hover {
     color: #d40000;
+    transform: scale(1.1);
 }
 .menu {
   display: flex;

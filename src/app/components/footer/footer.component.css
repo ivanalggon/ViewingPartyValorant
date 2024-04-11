@@ -1,14 +1,92 @@
 footer {
-    font-size: 2vh;
+    font-size: 2.5vh;
     background-color: #000000;
     color: #fff;
-    padding: 1em 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    line-height: 30px;
 }
 
 footer p {
     margin: 5px 0;
 }
+
+footer img{
+    height: 5em;
+    margin-right: 10px;
+}
+
+footer .containerTerminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 30px;
+    width: 100%;
+    padding: 30px;
+}
+
+
+footer .containerTerminos a{
+    list-style: none;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "FF Mark W05",Arial,sans-serif;
+    padding: 20px 0 0;
+    font-weight: 700;
+    font-size: 2vh;
+    letter-spacing: .08em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    
+}
+footer .containerTerminos a:hover{
+    color: #d40000;
+    transform: scale(1.2);
+}
+
+
+
+footer .containerPegi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .containerPegi img{
+    height: 6em;
+    margin-right: 10px;
+}
+
+footer .svgContainer{
+    display: flex;
+    align-items: center;
+}
+
+footer .containerFooter{
+    font-size: 2.5vh;
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 10%;
+    line-height: 30px;
+    width: 100%;
+    padding: 20px;
+    border-bottom: red 5px solid;
+}
+
  
 /* Estilo específico para el nombre del sitio web */
 footer .website-name {
@@ -18,4 +96,15 @@ footer .website-name {
 /* Estilos para el año de derechos de autor */
 footer .copyright {
     font-size: 0.8em;
+}
+
+footer .svgContainer svg {
+    margin: 10px;
+    height: 2em;
+    fill: #b40000;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+footer .svgContainer svg:hover {
+    fill: #f1f1f1;
 }
