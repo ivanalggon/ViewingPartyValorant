@@ -15,37 +15,37 @@ export class TiendaComponent implements OnInit{
       nombre: "Figura Jett de Valorant",
       descripcion: "Descripción breve del producto 1",
       precio: 189.99,
-      imagen: "../assets/jett-figura.jpg"
+      imagen: "../assets/img/jett-figura.jpg"
     },
     {
       nombre: "Figura Phoenix de Valorant",
       descripcion: "Descripción breve del producto 2",
       precio: 189.99,
-      imagen: "../assets/phoenix-figura.jpg"
+      imagen: "../assets/img/phoenix-figura.jpg"
     },
     {
       nombre: "Camiseta de Valorant",
       descripcion: "Descripción breve del producto 3",
       precio: 33.33,
-      imagen: "../assets/camiseta-valorant.jpg"
+      imagen: "../assets/img/camiseta-valorant.jpg"
     },
     {
       nombre: "Sudadera de Valorant",
       descripcion: "Descripción breve del producto 4",
       precio: 15.99,
-      imagen: "../assets/sudadera-valorant.jpg"
+      imagen: "../assets/img/sudadera-valorant.jpg"
     },
     {
       nombre: "Chaqueta Cazadora de Valorant",
       descripcion: "Descripción breve del producto 5",
       precio: 24.99,
-      imagen: "../assets/chaqueta-valorant.jpg"
+      imagen: "../assets/img/chaqueta-valorant.jpg"
     },
     {
       nombre: "Jersey de Valorant",
       descripcion: "Descripción breve del producto 6",
       precio: 9.99,
-      imagen: "../assets/jersey-valorant.jpg"
+      imagen: "../assets/img/jersey-valorant.jpg"
     }
   ];
 

@@ -3,6 +3,7 @@ body{
   position: relative;
   padding-bottom: 3em;
   min-height: 100vh;
+  background-color: #727272;
 }
 
 h1 {
