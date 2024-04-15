@@ -25,6 +25,7 @@
     float:left;
     transition:opacity .6s ease, transform .3s ease;
     overflow: hidden;
+    border-bottom: #000000 30px solid;
     
   }
   .main-slider .swiper-image{
