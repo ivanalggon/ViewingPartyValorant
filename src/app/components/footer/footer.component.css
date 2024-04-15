@@ -38,7 +38,7 @@ footer .containerTerminos a{
     font-family: "FF Mark W05",Arial,sans-serif;
     padding: 20px 0 0;
     font-weight: 700;
-    font-size: 2vh;
+    font-size: 1em;
     letter-spacing: .08em;
     text-align: center;
     text-transform: uppercase;
@@ -49,10 +49,8 @@ footer .containerTerminos a{
 }
 footer .containerTerminos a:hover{
     color: #d40000;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
-
-
 
 footer .containerPegi{
     display: flex;
@@ -60,10 +58,11 @@ footer .containerPegi{
     align-items: center;
     justify-content: space-between;
     padding-top: 2%;
+    text-align: center;
 }
 footer .containerPegi img{
     height: 4em;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 footer .svgContainer{

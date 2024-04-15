@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    background-color: #1f1f1f;
+    padding: 40px;
+    margin-top: 20px;
 }
 
 #imgProduct {
