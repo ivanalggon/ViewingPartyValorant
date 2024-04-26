@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Importa CommonModule
-import { Reserva } from './reservas.interface'; // Import the Reserva interface
+import { CommonModule } from '@angular/common';
+import { Reserva } from './reservas.interface';
 
 @Component({
   selector: 'app-reservas',
