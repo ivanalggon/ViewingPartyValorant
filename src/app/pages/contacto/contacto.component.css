@@ -1,31 +1,75 @@
-.contact, #reservasDiv, #tiendaDiv{
+@font-face {
+    font-family: Valorant;
+    src: url(../../../assets/Valorant_Font.ttf);
+}
+
+.contact, .objectives{
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
-    padding: 7vh;
+    padding: clamp(2.8rem, 5vw, 3.8rem);
     border-radius: 10px;
     background-color: #1f1f1f;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
     margin-bottom: 20px;
     color: white;
 }
-.contact h2, #noticias h2, #reservasDiv h2, #tiendaDiv h2{
-    color: white;
-    font-size: 5vh;
-    margin-bottom: 20px;
+
+.aboutUs{
+    padding: 30px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    flex-wrap: wrap;
 }
-.contact p, #noticias p, #reservasDiv p, #tiendaDiv p{
+.aboutUs > div{
+    border: 3px solid #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.aboutUs > div > div{
+    
+}
+.aboutUs h2{
+    font-family: 'Valorant';
+    color: white;
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-align: center;
+}
+.aboutUs > div > div.aboutUsTitle{
+    background-color: #1f1f1f;
+    padding: 15px;
+    width: 100%;
+}
+.aboutUs img{
+    padding: 0px;
+    width: 100%;
+}
+
+
+.contact h2, .objectives h2{
+    color: white;
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-align: center;
+    font-family: 'Valorant';
+}
+.contact p, .aboutUs p, .objectives p{
     font-size: 1.2em;
 }
-
-
 .input-container {
     background-color: #000000;
     flex: 1;
     padding: 10px;
     border-radius: 10px;
 }
-
 .input-group label {
     text-align: left;
     width: 200px;

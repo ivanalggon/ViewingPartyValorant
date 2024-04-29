@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Valorant;
+  src: url(../../../../assets/Valorant_Font.ttf);
+}
+
 nav {
     padding: 20px 20px;
     color: #fff;
@@ -18,10 +23,11 @@ nav ul li {
  
 nav ul li a {
     text-decoration: none;
+    font-family: 'Valorant';
     color: #fff;
-    font-size: 4vh;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     cursor: pointer;  
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 nav ul li a:hover {
     color: #d40000;

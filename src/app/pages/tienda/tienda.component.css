@@ -1,18 +1,35 @@
+@font-face {
+    font-family: Valorant;
+    src: url(../../../assets/Valorant_Font.ttf);
+}
+
 .containerTienda {
     display: flex;
-    flex-direction: space-between;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     background-color: #1f1f1f;
-    padding: 40px;
-    margin-top: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.container > h1{
+    color: black;
+    font-size: clamp(2.8rem, 5vw, 3.8rem);
+    font-family: 'Valorant';
+    text-align: center;
+    padding: 50px;
 }
 
 #imgProduct {
     border-radius: 10px;
     margin-bottom: 20px;
-    transition: all 0.3s;
+    transition: transform 0.3s ease-in-out;
+}
+#imgProduct:hover {
+    transform: scale(1.1);
+
 }
 
 .tarjeta-producto{
@@ -27,7 +44,6 @@
     color: white;
     text-align: center;
     transition: all 0.3s;
-
     max-width: 300px;
 }
 .informacion-producto{

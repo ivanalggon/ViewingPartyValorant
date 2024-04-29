@@ -7,7 +7,7 @@ header{
 }
 
 #logoVPV{
-    height: 10vh;
+    height: clamp(3vh, 6vw, 10vh);
 }
 .divBotones{
     display: flex;
