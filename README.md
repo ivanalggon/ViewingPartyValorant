@@ -2,7 +2,7 @@
 
 Web para asisitir a eventos presenciales de Valorant.
 
-##Clonar el Proyecto
+## Clonar el Proyecto
 
 Para arrancar el proyecto se debe clonar el repositorio dandole click a **code > https** y copiando la url. 
 
