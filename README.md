@@ -1,27 +1,27 @@
-# ViewingPartyValorant
+# VPV - Viewing Party Valorant
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+Web para asisitir a eventos presenciales de Valorant.
 
-## Development server
+##Clonar el Proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para arrancar el proyecto se debe clonar el repositorio dandole click a **code > https** y copiando la url. 
 
-## Code scaffolding
+Con el comando `git clone url-del-repositorio` se clonará el proyecto a la ruta que le hayamos asignado.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para finalizar la instalación ejecutaremos en la terminal `npm install` y ya tendremos el proyecto instalado correctamente.
 
-## Build
+## Arrancar el proyecto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecuta `ng serve` en la terminal para un arrancar el proyecto en desarrollo. Navega a `http://localhost:4200/`. 
 
-## Running unit tests
+La aplicación se recargará automáticamente si se cambia algún archivo de código.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Detalles del proyecto
 
-## Running end-to-end tests
+Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) versión 17.1.0.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Generar componentes
 
-## Further help
+Ejecuta `ng generate component component-name` en la terminal para generar un nuevo componente. También puedes usar: 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`ng generate directive|pipe|service|class|guard|interface|enum|module`.
