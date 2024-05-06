@@ -25,7 +25,7 @@
     float:left;
     transition:opacity .6s ease, transform .3s ease;
     overflow: hidden;
-    border-bottom: #000000 30px solid;
+    border-bottom: rgb(0, 0, 0) 3px solid;
     
   }
   .main-slider .swiper-image{
@@ -53,12 +53,13 @@
     padding-right: 150px;
   }
   h1{
-    font-size: 10vh;
+    font-size: clamp(3rem, 7vw, 7rem);
     margin:0 0 10px;
     text-shadow: 4px 4px 8px #000000;
     text-align: center;
     font-family: 'Valorant';
     color: #ffffff;
+    line-height: 1.5em;
   }
   p{
     text-shadow: 4px 4px 8px #000000;

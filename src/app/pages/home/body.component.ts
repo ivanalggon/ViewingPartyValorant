@@ -5,10 +5,11 @@ import { TiendaComponent } from '../tienda/tienda.component';
 import { NoticiasComponent } from '../noticias/noticias.component';
 import { sliderImgComponent } from '../../components/sliderImg/sliderImg.component';
 import { ContactoComponent} from '../contacto/contacto.component';
+import { PartnersSliderComponent } from '../../components/partners-slider/partners-slider.component';
 
 @Component({
   selector: 'app-body',
-  imports: [CommonModule, ReservasComponent, TiendaComponent, NoticiasComponent,sliderImgComponent, ContactoComponent],
+  imports: [CommonModule, ReservasComponent, TiendaComponent, NoticiasComponent,sliderImgComponent, ContactoComponent, PartnersSliderComponent],
   standalone: true,
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.css']
