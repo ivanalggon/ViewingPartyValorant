@@ -107,7 +107,7 @@ footer .svgContainer svg {
     height: 2em;
     fill: #b40000;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 footer .svgContainer svg:hover {
     fill: #f1f1f1;

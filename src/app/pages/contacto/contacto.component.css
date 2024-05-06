@@ -3,6 +3,7 @@
     src: url(../../../assets/Valorant_Font.ttf);
 }
 
+
 .contact, .objectives{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -27,21 +28,18 @@
     flex-wrap: wrap;
 }
 .aboutUs > div{
-    border: 3px solid #1f1f1f;
+    border: 3px solid #000000;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     justify-content: space-between;
 
-}
-.aboutUs > div > div{
-    
 }
 .aboutUs h2{
     font-family: 'Valorant';
     color: white;
     font-size: clamp(2rem, 3vw, 3rem);
+    margin-top: 15px;
     text-align: center;
 }
 .aboutUs > div > div.aboutUsTitle{
@@ -50,8 +48,22 @@
     width: 100%;
 }
 .aboutUs img{
-    padding: 0px;
-    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.aboutUs > .aboutUsImage{
+    overflow: hidden;
+}
+.aboutUsContent{
+    justify-content: center; 
+    text-align: left; 
+    padding: 20px;
+}
+.aboutUsContent p{
+    font-size: 2em;
+}
+.aboutUsFooter{
+    
 }
 
 
@@ -70,9 +82,16 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    /*al centro*/
+    align-items: center;
+}
 .input-group label {
     text-align: left;
-    width: 200px;
+    width: 100%;
     font-size: 1.2em;
     color: #ffffff;
 }
@@ -83,17 +102,22 @@
     padding: 10px;
     font-size: 1.2em;
     border-radius: 5px;
+    margin: 5px 0;
 }
 
-.input-group input[type="submit"] {
-    background: #000;
-    color: white;
+.input-group > input[type="submit"] {
+    width: 50%;
+    margin-top: 30px;
+    font-family: 'Valorant';
+    font-size: clamp(1rem, 2vw, 2rem);
+    background: #FFC700;
+    color: black;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .input-group input[type="submit"]:hover {
-    background: #000;
-    color: #d40000;
+    background: #d32020;
+    color: #000;
 }
 
 .iframe-container {
@@ -106,3 +130,6 @@ iframe {
     border: 0;
     border-radius: 10px;
 }
+
+
+
