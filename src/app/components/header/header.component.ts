@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 
 @Component({
@@ -11,18 +12,12 @@ import { MenuComponent } from './menu/menu.component';
 })
 
 export class HeaderComponent implements OnInit{
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  cambiarColor(color: string): void {
-    this.header.classList.remove('negro', 'gris');
-    this.header.classList.add(color);
-    
-  }
-
-  private get header(): HTMLElement {
-    return document.querySelector('.header') as HTMLElement;
+  btnPerfil() {
+    this.router.navigate(['/login']);
   }
 }
