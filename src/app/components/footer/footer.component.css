@@ -4,7 +4,7 @@
 }
 
 footer {
-    font-size: 2.5vh;
+    font-size: 2vw;
     background-color: #000000;
     color: #fff;
     text-align: center;
@@ -27,6 +27,7 @@ footer img{
 
 footer .containerTerminos{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -49,6 +50,7 @@ footer .containerTerminos a{
     color: #fff;
     text-decoration: none;
     transition: all .4s ease-in-out;
+    padding: 30px;
     
 }
 footer .containerTerminos a:hover{
@@ -75,14 +77,14 @@ footer .svgContainer{
 }
 
 footer .containerFooter{
-    font-size: 2.5vh;
+    font-size: 2vw;
     background-color: #1f1f1f;
     color: #fff;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 5%;
     padding-right: 10%;
     line-height: 30px;
@@ -90,6 +92,11 @@ footer .containerFooter{
     padding: 20px;
     border-bottom: red 5px solid;
     flex-wrap: wrap;
+}
+
+footer .containerFooter > div{
+    margin-top: 3vw;
+    margin-bottom: auto;
 }
 
  
