@@ -20,10 +20,10 @@ footer p {
     margin: 5px 0;
 }
 
-footer img{
-    height: 5em;
-    margin-right: 10px;
+.logoFooter > img{
+    width: clamp(200px, 7vw, 800px);
 }
+
 
 footer .containerTerminos{
     display: flex;
@@ -44,7 +44,7 @@ footer .containerTerminos a{
     padding: 20px 0 0;
     font-family: 'Valorant';
     font-weight: 700;
-    font-size: 1em;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -65,10 +65,11 @@ footer .containerPegi{
     justify-content: space-between;
     padding-top: 2%;
     text-align: center;
+
 }
 footer .containerPegi img{
-    height: 4em;
-    margin-right: 30px;
+    width: clamp(5rem, 5vw, 6rem);
+    height: auto;
 }
 
 footer .svgContainer{
@@ -77,7 +78,7 @@ footer .svgContainer{
 }
 
 footer .containerFooter{
-    font-size: 2vw;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     background-color: #1f1f1f;
     color: #fff;
     text-align: center;
@@ -94,13 +95,7 @@ footer .containerFooter{
     flex-wrap: wrap;
 }
 
-footer .containerFooter > div{
-    margin-top: 3vw;
-    margin-bottom: auto;
-}
 
- 
-/* Estilo específico para el nombre del sitio web */
 footer .website-name {
     font-weight: bold;
 }
@@ -119,4 +114,13 @@ footer .svgContainer svg {
 }
 footer .svgContainer svg:hover {
     fill: #f1f1f1;
+}
+
+@media screen and (max-width: 495px) {
+    .CopyrightFooter{
+        display: none;
+    }
+    .svgContainer{
+        margin-top: 20px;
+    }
 }

@@ -9,6 +9,24 @@ header{
 #logoVPV{
     height: 70px;
 }
+
+.hamburguer-menu{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: right;
+    align-self: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 17px;
+}
+.hamburguer-menu svg{
+    height: auto;
+    width: 20px;
+}
+
+
 .divBotones{
     display: flex;
     justify-content: center;
@@ -37,11 +55,11 @@ header{
     color: black;
 }
 
-/* TODO Hacer @media de 1200px*/
-
 @media (max-width: 1200px) {
     #btnPerfil{
         display: none;
     }
-    /*menu hamburguesa display block*/
+    .hamburguer-menu{
+        display: block;
+    }
 }

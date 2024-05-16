@@ -3,10 +3,6 @@
   src: url(../../../../assets/Valorant_Font.ttf);
 }
 
-.hamburguer-menu{
-    display: none;
-}
-
 nav {
     padding: 20px 20px;
     color: #fff;
@@ -67,14 +63,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 1200px) {
-  nav ul li {
+  nav {
     display: none;
   }
-  .hamburguer-menu{
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-    align-self: right;
-  }
-  
 }
