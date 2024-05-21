@@ -3,7 +3,11 @@
   <app-menu></app-menu>
   <div class="divButtons">
     <ul class="menu" data-animation="bonus">
-      <button (click)="btnPerfil()" id="btnPerfil">👤</button>
+      <button *ngIf="!isLoggedIn" (click)="btnPerfil()" id="btnPerfil">👤</button> 
+      <button *ngIf="isLoggedIn" (click)="btnCarrito()" id="btnCarrito">🛒</button>
+      <button *ngIf="isLoggedIn" (click)="btnPerfilUserRgistrado()" id="btnPerfil">
+        👤 {{ username }} <app-menu-perfil *ngIf="menuPerfilVisible"></app-menu-perfil>
+      </button> 
     </ul>
   </div>
 </header>

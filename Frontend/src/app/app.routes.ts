@@ -5,6 +5,7 @@ import { TiendaComponent } from './pages/tienda/tienda.component';
 import { ReservasComponent } from './pages/reservas/reservas.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { LoginComponent } from './pages/login/login.component';
+import {MenuPerfilComponent} from './components/header/menu-perfil/menu-perfil.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,6 +14,6 @@ export const routes: Routes = [
     { path: 'reservas', component: ReservasComponent },
     { path: 'tienda', component: TiendaComponent },
     { path: 'contacto', component: ContactoComponent },
-    { path: 'login', component: LoginComponent }
-
+    { path: 'login', component: LoginComponent },
+    { path: 'perfil', component: MenuPerfilComponent }
 ];

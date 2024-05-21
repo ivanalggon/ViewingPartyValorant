@@ -1,22 +1,24 @@
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form (ngSubmit)="onSubmit()"[formGroup]="formRegister">
+        <form (ngSubmit)="onSubmit()" [formGroup]="formRegister">
             <h1>Crear cuenta</h1>
             <br>
             <br>
-            <input type="text" formControlName="nameRegister" placeholder="Name" required/>
-            <input type="email" formControlName="emailRegister" placeholder="Email" required/>
-            <input type="password" formControlName="passwordRegister" placeholder="Password" required/>
-            <button type="submit">Sign Up</button>
+            <input type="text" formControlName="nameRegister" placeholder="Name" required>
+            <input type="text" formControlName="surnameRegister" placeholder="Surname" required>
+            <input type="text" formControlName="usernameRegister" placeholder="Username" required>
+            <input type="email" formControlName="emailRegister" placeholder="Email" required>
+            <input type="password" formControlName="passwordRegister" placeholder="Password" required>
+            <button type="button" (click)="onRegister()">Sign Up</button>
         </form>
     </div>
     <div class="form-container sign-in-container">
-        <form (ngSubmit)="onSubmit()"[formGroup]="formLogin" >
+        <form (ngSubmit)="onSubmit()" [formGroup]="formLogin">
             <h1>Login</h1>
             <br>
             <br>
-            <input type="email" formControlName="emailLogin" placeholder="Email" required/>
-            <input type="password" formControlName="passwordLogin" placeholder="Password" required/>
+            <input type="email" formControlName="emailLogin" placeholder="Email" required>
+            <input type="password" formControlName="passwordLogin" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
     </div>
@@ -24,12 +26,12 @@
         <div class="overlay">
             <div class="overlay-panel overlay-left">
                 <h1>Bienvenido de nuevo!</h1>
-                <p>Inicie sesion</p>
+                <p>Inicie sesión</p>
                 <button (click)="deactivateRightPanel()" id="signIn">Login</button>
             </div>
             <div class="overlay-panel overlay-right">
                 <h1>Bienvenido!</h1>
-                <p>Registrate</p>
+                <p>Regístrese</p>
                 <button (click)="activateRightPanel()" id="signUp">Sign Up</button>
             </div>
         </div>
