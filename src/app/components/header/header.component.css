@@ -4,6 +4,7 @@ header{
     justify-content: space-between;
     height: 125px;
     align-items: center;
+    position: sticky;
 }
 
 #logoVPV{
