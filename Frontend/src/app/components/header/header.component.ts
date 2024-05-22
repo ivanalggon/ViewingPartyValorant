@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit{
   cambiarColor(color: string): void {
     this.header.classList.remove('negro', 'gris');
     this.header.classList.add(color);
-    
   }
 
   private get header(): HTMLElement {

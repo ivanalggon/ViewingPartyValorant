@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import {CommonModule} from '@angular/common';
 import { Noticia } from './noticiasdestacadas.interface';
 import { Evento } from './evento.interface';
@@ -57,17 +56,3 @@ export class NoticiasDestacadasComponent{
 
 
 
-=======
-import { NoticiasDestacadasComponent } from '../../components/noticias-destacadas/noticiasdestacadas.component';
-
-@Component({
-  selector: 'app-noticias',
-  standalone: true,
-  imports: [NoticiasDestacadasComponent],
-  templateUrl: './noticias.component.html',
-  styleUrl: './noticias.component.css'
-})
-export class NoticiasComponent {
-
-}
->>>>>>> desarrollo
