@@ -16,10 +16,10 @@
 
 .container > h1{
     color: black;
-    font-size: clamp(2.8rem, 5vw, 3.8rem);
+    font-size: clamp(2rem, 3vw, 3rem);
     font-family: 'Valorant';
     text-align: center;
-    padding: 50px;
+    padding-top: 50px;
 }
 
 #imgProduct {

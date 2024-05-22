@@ -1,8 +1,6 @@
 .slider {
     padding: 30px;
     display: flex;
-    justify-content: center;
-    /* width: 70vw; */
     height: auto;
     margin: auto;
     overflow: hidden;
@@ -45,5 +43,11 @@
     100% {
         -webkit-transform: translateX(calc(-300px * 7));
         transform: translateX(calc(-300px * 7));
+    }
+}
+
+@media (max-width: 1200px) {
+    .slider{
+        display: none;
     }
 }
