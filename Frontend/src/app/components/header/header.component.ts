@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   templateUrl: './header.component.html',
   providers: [],
-  imports : [MenuComponent],
+  imports : [],
   styleUrls: ['./header.component.css']
 })
 
@@ -14,6 +13,20 @@ export class HeaderComponent implements OnInit{
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngAfterViewInit(): void {
+    const nav = document.querySelector("#nav");
+    const abrir = document.querySelector("#abrir");
+    const cerrar = document.querySelector("#cerrar");
+
+    abrir?.addEventListener("click", () => {
+      nav?.classList.add("visible");
+    })
+
+    cerrar?.addEventListener("click", () => {
+      nav?.classList.remove("visible");
+    })
   }
 
   cambiarColor(color: string): void {

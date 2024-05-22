@@ -1,9 +1,17 @@
-<header class="header">
+<header class="header" id="header" #header>
   <a href="/home"><img src="../assets/img/logoVPV.png" alt="logoVPV" id="logoVPV"></a>
-  <app-menu></app-menu>
+  <button id="abrir" #abrir class="abrir-menu">☰</button>
+  <nav class="nav" id="nav" #nav>
+    <button class="cerrar-menu" id="cerrar" #cerrar>X</button>
+    <ul class="menu" data-animation="bonus">
+      <li><a href="/noticias">Noticias</a></li>
+      <li><a href="/reservas">Reservas</a></li>
+      <li><a href="/tienda">Tienda</a></li>
+      <li><a href="/contacto">Contacto</a></li>
+    </ul>
+  </nav>
   <div class="divButtons">
     <ul class="menu" data-animation="bonus">
-      <button class="hamburguer-menu">☰</button>
       <button (click)="cambiarColor('negro')" id="btnPerfil">👤</button>
     </ul>
   </div>
