@@ -10,6 +10,7 @@ header{
     height: 125px;
     align-items: center;
     position: sticky;
+    z-index: 1001;
 }
 
 #logoVPV{
@@ -142,14 +143,6 @@ nav ul li a:hover {
         font-size: 40px;
     }
 
-    .cerrar-menu {
-        color: #ececec;
-        transition: 0.5s ease-in-out;
-    }
-    .cerrar-menu:hover {
-        color: #d40000;
-    }
-
     .nav {
         opacity: 0;
         visibility: hidden;
@@ -162,7 +155,6 @@ nav ul li a:hover {
         right: 0;
         bottom: 0;
         background-color: #1c1c1c;
-        padding: 2rem;
         height: fit-content;
     }
 
@@ -176,7 +168,30 @@ nav ul li a:hover {
         align-items: end;
     }
 
-    .menu li a {
+    .menu li > a {
         color: #ecececec;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ececec;
+        transition: 0.5s ease-in-out;
+    }
+    .menu li > a:hover {
+        border-bottom: 1px solid #d40000;
+    }
+
+    nav > ul > li{
+        margin-right: 0;
+        margin-top: 10px;
+        width: 100%;
+        
+    }
+
+    .cerrar-menu {
+        color: #d40000;
+        transition: 0.3s;
+    }
+    
+    .cerrar-menu:hover {
+        transform: scale(1.25);
     }
 }

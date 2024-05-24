@@ -1,3 +1,9 @@
+main{
+  z-index: 1000 !important;
+}
+header{
+  z-index: 1001;
+}
 body{
   margin: 0;
   position: relative;
