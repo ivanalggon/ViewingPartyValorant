@@ -52,7 +52,7 @@ export class LoginComponent {
       const { emailLogin, passwordLogin } = this.formLogin.value;
       console.log('Form values:', emailLogin, passwordLogin);
       this.backendService.getLogin(emailLogin, passwordLogin).subscribe(
-        (users) => { // Cambiar "response" a "users"
+        (users) => {
           console.log('Response from login service:', users);
           if (users.length > 0) {
             localStorage.setItem('username', users[0].username);
@@ -71,9 +71,9 @@ export class LoginComponent {
 
   onRegister() {
     if (this.formRegister.valid) {
-      const { nameRegister, surnameRegister, usernameRegister,emailRegister, passwordRegister } = this.formRegister.value;
-      console.log('Register form values:', nameRegister, surnameRegister, usernameRegister,emailRegister, passwordRegister);
-      this.backendService.register(nameRegister, surnameRegister, usernameRegister,emailRegister, passwordRegister).subscribe(
+      const { nameRegister, surnameRegister, usernameRegister, emailRegister, passwordRegister } = this.formRegister.value;
+      console.log('Register form values:', nameRegister, surnameRegister, usernameRegister, emailRegister, passwordRegister);
+      this.backendService.register(nameRegister, surnameRegister, usernameRegister, emailRegister, passwordRegister).subscribe(
         (response) => {
           console.log('Response from registration service:', response);
           if (response && response.username) {
@@ -87,6 +87,7 @@ export class LoginComponent {
           this.errorMessage = 'Error en el registro. Por favor, verifica tus datos.';
         }
       );
+      window.location.reload();
     }
   }
 }

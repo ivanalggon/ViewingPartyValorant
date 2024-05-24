@@ -33,7 +33,7 @@ export class BackendService {
     console.log(`Making request to: http://localhost:3000/api/users?email=${emailLogin}&password=${passwordLogin}`);
     return this.httpClient.get<any>(`http://localhost:3000/api/users?email=${emailLogin}&password=${passwordLogin}`)
       .pipe(
-        map(response => response.users), // Accede al array de usuarios dentro de la respuesta
+        map(response => response.users),
         tap(users => {
           console.log('Users from API:', users);
           if (users.length > 0) {
@@ -46,9 +46,9 @@ export class BackendService {
       );
   }
 
-  register(nameRegister: string, surnameRegister:string, usernameRegister: string ,emailRegister: string, passwordRegister: string): Observable<any> {
+  register(nameRegister: string, surnameRegister: string, usernameRegister: string, emailRegister: string, passwordRegister: string): Observable<any> {
     const url = 'http://localhost:3000/api/users';
-    const body = { name: nameRegister, surname : surnameRegister, username : usernameRegister, email: emailRegister, password: passwordRegister };
+    const body = { name: nameRegister, surname: surnameRegister, username: usernameRegister, email: emailRegister, password: passwordRegister };
     console.log(`Sending registration request to: ${url} with body:`, body);
     return this.httpClient.post<any>(url, body).pipe(
       tap(response => {
