@@ -1,6 +1,6 @@
 # VPV - Viewing Party Valorant
 
-Web para asisitir a eventos presenciales de Valorant.
+Viewing Party Valorant tiene como objetivo principal crear un espacio único que combine la emoción de presenciar torneos profesionales de Valorant con la oportunidad de que los jugadores aficionados compitan entre sí, emulando la experiencia de participar en un torneo de alto nivel.
 
 ## Clonar el Proyecto
 
@@ -12,16 +12,18 @@ Para finalizar la instalación ejecutaremos en la terminal `npm install` y ya te
 
 ## Arrancar el proyecto
 
-Ejecuta `ng serve` en la terminal para un arrancar el proyecto en desarrollo. Navega a `http://localhost:4200/`. 
+### Frontend
 
-La aplicación se recargará automáticamente si se cambia algún archivo de código.
+Para arrancar el proyecto se debe ejecutar desde la ruta **Frontend** en terminal el comando `ng serve` y navegar a `http://localhost:4200/`.
+
+Si no se ha entrado a la carpeta saldrá un error de que no se encuentra el archivo angular.json, por lo que deberemos de poner `cd Frontend` para entrar a la carpeta y, ahora si, ejecutar el comando `ng serve` para arrancar el servidor de Angular Frontend.
+
+### Backend
+
+Para arrancar el proyecto se debe ejecutar desde la ruta **Backend** en terminal el comando `node app.js` y navegar a `http://localhost:3000/`.
+
+Si no se ha entrado a la carpeta saldrá un error de que no se encuentra el archivo app.js, por lo que deberemos de poner `cd Backend` para entrar a la carpeta y, ahora si, ejecutar el comando `node app.js` para arrancar el servidor de la API Backend.
 
 ## Detalles del proyecto
 
 Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) versión 17.1.0.
-
-## Generar componentes
-
-Ejecuta `ng generate component component-name` en la terminal para generar un nuevo componente. También puedes usar: 
-
-`ng generate directive|pipe|service|class|guard|interface|enum|module`.
