@@ -1,4 +1,4 @@
-<header class="header" id="header" #header>
+<header class="header">
   <a href="/home"><img src="../assets/img/logoVPV.png" alt="logoVPV" id="logoVPV"></a>
   <button id="abrir" #abrir class="abrir-menu">☰</button>
   <nav class="nav" id="nav" #nav>
@@ -12,7 +12,11 @@
   </nav>
   <div class="divButtons">
     <ul class="menu" data-animation="bonus">
-      <button (click)="cambiarColor('negro')" id="btnPerfil">👤</button>
+      <button *ngIf="!isLoggedIn" (click)="btnPerfil()" id="btnPerfil">👤</button> 
+      <button *ngIf="isLoggedIn" (click)="btnCarrito()" id="btnCarrito">🛒</button>
+      <button *ngIf="isLoggedIn" (click)="btnPerfilUserRgistrado()" id="btnPerfil">
+        👤 <app-menu-perfil *ngIf="menuPerfilVisible"></app-menu-perfil>
+      </button> 
     </ul>
   </div>
 </header>

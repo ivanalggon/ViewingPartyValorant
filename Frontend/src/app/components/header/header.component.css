@@ -22,7 +22,7 @@ header{
     justify-content: center;
     margin-top: 20px;
 }
-#btnPerfil{
+#btnPerfil, #btnCarrito{
     margin: 10px;
     padding: 10px;
     border: 1px solid #000;
