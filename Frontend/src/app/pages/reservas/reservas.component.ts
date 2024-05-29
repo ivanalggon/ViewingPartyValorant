@@ -10,10 +10,9 @@ import { Reserva } from './reservas.interface';
   styleUrls: ['./reservas.component.css'],
 })
 export class ReservasComponent implements OnInit {
-  reservas: Reserva[] = []; // Array to store reserva objects
+  reservas: Reserva[] = [];
 
   ngOnInit() {
-    // Fetch reserva data from an API or populate it manually
     this.reservas = [
       {
         imagen: '../assets/img/koi-giants.jpg', 

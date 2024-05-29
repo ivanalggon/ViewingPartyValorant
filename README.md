@@ -1,3 +1,5 @@
+![Logo de VPV](Frontend/src/assets/img/logoVPVFondoNegroPequeño.png)
+
 # VPV - Viewing Party Valorant
 
 Viewing Party Valorant tiene como objetivo principal crear un espacio único que combine la emoción de presenciar torneos profesionales de Valorant con la oportunidad de que los jugadores aficionados compitan entre sí, emulando la experiencia de participar en un torneo de alto nivel.

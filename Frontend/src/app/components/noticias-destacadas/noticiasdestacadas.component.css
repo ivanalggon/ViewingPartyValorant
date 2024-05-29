@@ -192,4 +192,9 @@ button:hover{
     background-color: #ff0000;
     color: white;
   }
+
+  .tarjeta {
+    animation-range: entry 0% cover 0%;
+    animation-fill-mode: both;
+  }
 }

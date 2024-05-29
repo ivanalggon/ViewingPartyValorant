@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Valorant;
+    src: url(../../../../assets/Valorant_Font.ttf);
+}
+
+h1{
+    font-family: Valorant;
+    text-align: center;
+    font-size: clamp(3rem, 4vw, 4rem);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container-fluid{
+    padding: 30px;
+}
+
+label{
+    margin-top: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.row{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+ul{
+    border: 1px solid;
+}
+
+.image{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.dropdown-menu{
+    width: 230px;
+}
+.dropdown-menu li{
+    text-align: center;
+}
+.dropdown-menu li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+.dropdown-menu li a:hover{
+    color: red;
+}
+
+.row{
+    justify-content: center;
+    padding: 20px;
+}
+input{
+    border: 1px solid black;
+}
+.form-control{
+    width: 100%;
+
+}
+
+/*input type submit*/
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    transition: ease 0.2s;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    color: #ce1a1a;
+}
+

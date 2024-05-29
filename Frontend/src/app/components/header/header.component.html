@@ -1,10 +1,29 @@
 <header class="header">
   <a href="/home"><img src="../assets/img/logoVPV.png" alt="logoVPV" id="logoVPV"></a>
-  <app-menu></app-menu>
+  <button id="abrir" #abrir class="abrir-menu">☰</button>
+  <nav class="nav" id="nav" #nav>
+    <button class="cerrar-menu" id="cerrar" #cerrar style="font-weight: bold;">X</button>
+    <ul class="menu" data-animation="bonus">
+      <li><a href="/noticias">Noticias</a></li>
+      <li><a href="/reservas">Reservas</a></li>
+      <li><a href="/tienda">Tienda</a></li>
+      <li><a href="/contacto">Contacto</a></li>
+      <li style="display: none;"><button *ngIf="!isLoggedIn" (click)="btnPerfil()" id="btnPerfilHamburguesa">👤</button></li>
+      <div class="divHamburguesaOculta">
+        <li class="liCarritoHamburguesa"><button *ngIf="isLoggedIn" (click)="btnCarrito()" id="btnCarritoHamburguesa">🛒</button></li>
+        <li class="liPerfilHamburguesa"><button *ngIf="isLoggedIn" (click)="btnPerfilUserRgistrado()" id="btnPerfilHamburguesa">👤<app-menu-perfil *ngIf="menuPerfilVisible"></app-menu-perfil>
+      </button></li>
+      </div>
+      
+    </ul>
+  </nav>
   <div class="divButtons">
     <ul class="menu" data-animation="bonus">
-      <button class="hamburguer-menu">☰</button>
-      <button (click)="cambiarColor('negro')" id="btnPerfil">👤</button>
+      <button *ngIf="!isLoggedIn" (click)="btnPerfil()" id="btnPerfil">👤</button> 
+      <button *ngIf="isLoggedIn" (click)="btnCarrito()" id="btnCarrito">🛒</button>
+      <button *ngIf="isLoggedIn" (click)="btnPerfilUserRgistrado()" id="btnPerfil">
+        👤 <app-menu-perfil *ngIf="menuPerfilVisible"></app-menu-perfil>
+      </button> 
     </ul>
   </div>
 </header>
