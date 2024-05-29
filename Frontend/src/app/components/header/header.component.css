@@ -129,6 +129,9 @@ nav ul li a:hover {
     display: none;
 }
 
+.liHamburguesaOculta{
+    display: none;
+}
 
 
 @media (max-width: 1200px) {
@@ -137,7 +140,7 @@ nav ul li a:hover {
         display: none;
     }
 
-    .divHamburguesaOculta, .liPerfilHamburguesa, .liCarritoHamburguesa, #btnPerfilHamburguesa, #btnCarritoHamburguesa, #IconosHamburguesa{
+    .liHamburguesaOculta, .divHamburguesaOculta, .liPerfilHamburguesa, .liCarritoHamburguesa, #btnPerfilHamburguesa, #btnCarritoHamburguesa, #IconosHamburguesa{
         display: block;
     }
 
