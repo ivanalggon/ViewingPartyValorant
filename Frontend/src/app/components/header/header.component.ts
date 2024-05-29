@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuComponent } from './menu/menu.component';
 import { MenuPerfilComponent } from './menu-perfil/menu-perfil.component';
 import { BackendService } from '../../backend.service';
 import { CommonModule } from '@angular/common';
@@ -10,7 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  imports: [MenuComponent, MenuPerfilComponent, CommonModule]
+  imports: [ MenuPerfilComponent, CommonModule]
 })
 export class HeaderComponent implements OnInit {
   isLoggedIn: boolean = false;
@@ -46,5 +45,19 @@ export class HeaderComponent implements OnInit {
 
   logout() {
     this.backendService.logout();
+  }
+
+  ngAfterViewInit(): void {
+    const nav = document.querySelector("#nav");
+    const abrir = document.querySelector("#abrir");
+    const cerrar = document.querySelector("#cerrar");
+
+    abrir?.addEventListener("click", () => {
+      nav?.classList.add("visible");
+    })
+
+    cerrar?.addEventListener("click", () => {
+      nav?.classList.remove("visible");
+    })
   }
 }

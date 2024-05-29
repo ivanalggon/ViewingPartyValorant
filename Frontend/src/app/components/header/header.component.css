@@ -10,7 +10,7 @@ header{
     height: 125px;
     align-items: center;
     position: sticky;
-    z-index: 1001;
+    z-index: 1001 !important;
 }
 
 #logoVPV{
@@ -22,10 +22,11 @@ header{
     justify-content: center;
     margin-top: 20px;
 }
-#btnPerfil, #btnCarrito{
+
+#btnPerfil, #btnCarrito, #btnPerfilHamburguesa, #btnCarritoHamburguesa{
     margin: 10px;
     padding: 10px;
-    border: 1px solid #000;
+    border: none;
     cursor: pointer;
     color: #000;
     font-size: 20px;
@@ -33,6 +34,13 @@ header{
     transition: all 0.3s;
     background-color: transparent;
     font-size: 40px;
+}
+#btnPerfil:hover, #btnCarrito:hover, #btnPerfilHamburguesa:hover, #btnCarritoHamburguesa:hover{
+    scale: 1.2;
+}
+
+.divHamburguesaOculta, .liPerfilHamburguesa, .liCarritoHamburguesa, #btnPerfilHamburguesa, #btnCarritoHamburguesa, #IconosHamburguesa{
+    display: none;
 }
 
 .header.negro {
@@ -108,7 +116,7 @@ nav ul li a:hover {
 .menu {
     list-style-type: none;
     display: flex;
-    gap: 1rem;
+    padding: 0;
 }
 
 .menu li a {
@@ -125,8 +133,12 @@ nav ul li a:hover {
 
 @media (max-width: 1200px) {
 
-    .divButtons{
+    .divButtons, #btnPerfil, #btnCarrito{
         display: none;
+    }
+
+    .divHamburguesaOculta, .liPerfilHamburguesa, .liCarritoHamburguesa, #btnPerfilHamburguesa, #btnCarritoHamburguesa, #IconosHamburguesa{
+        display: block;
     }
 
     .abrir-menu,
@@ -172,18 +184,16 @@ nav ul li a:hover {
         color: #ecececec;
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid #ececec;
         transition: 0.5s ease-in-out;
-    }
-    .menu li > a:hover {
-        border-bottom: 1px solid #d40000;
     }
 
     nav > ul > li{
         margin-right: 0;
         margin-top: 10px;
         width: 100%;
-        
+    }
+    nav ul li {
+        margin-right: 0;
     }
 
     .cerrar-menu {
@@ -193,5 +203,8 @@ nav ul li a:hover {
     
     .cerrar-menu:hover {
         transform: scale(1.25);
+    }
+    .menu li{
+        margin-right: 0;
     }
 }

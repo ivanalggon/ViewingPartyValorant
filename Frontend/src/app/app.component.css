@@ -2,7 +2,8 @@ main{
   z-index: 1000 !important;
 }
 header{
-  z-index: 1001;
+  z-index: 1001 !important;
+  position: sticky !important;
 }
 body{
   margin: 0;
