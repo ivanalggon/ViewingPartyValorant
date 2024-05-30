@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db');
 
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
+
 // Ruta para obtener todos los usuarios
 router.get('/', (req, res) => {
   db.query('SELECT * FROM user', (err, results) => {
@@ -42,18 +45,26 @@ router.post('/', (req, res) => {
   // Por ejemplo, supongamos que el usuario administrador tiene el nombre de usuario 'admin'
   const role = (username === 'admin') ? 'admin' : 'user';
 
-  db.query(
-    'INSERT INTO user (name, surname, username, email, password, role) VALUES (?, ?, ?, ?, ?, ?)',
-    [name, surname, username, email, password, role],
-    (err, results) => {
-      if (err) {
-        console.error('Error al crear el usuario:', err);
-        res.status(500).json({ error: 'Error al crear el usuario', details: err.message });
-      } else {
-        res.status(201).json({ message: 'Usuario creado con éxito', userId: results.insertId });
-      }
+  // Encriptar la contraseña
+  bcrypt.hash(password, saltRounds, function(err, hash) {
+    if (err) {
+      console.error('Error al encriptar la contraseña:', err);
+      res.status(500).json({ error: 'Error al encriptar la contraseña', details: err.message });
+    } else {
+      db.query(
+        'INSERT INTO user (name, surname, username, email, password, role) VALUES (?, ?, ?, ?, ?, ?)',
+        [name, surname, username, email, hash, role], // Usar la contraseña encriptada
+        (err, results) => {
+          if (err) {
+            console.error('Error al crear el usuario:', err);
+            res.status(500).json({ error: 'Error al crear el usuario', details: err.message });
+          } else {
+            res.status(201).json({ message: 'Usuario creado con éxito', userId: results.insertId });
+          }
+        }
+      );
     }
-  );
+  });
 });
 
 // Ruta para actualizar un usuario por su ID
