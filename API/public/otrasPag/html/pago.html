@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylePago.css">
+    <script src="../js/pagoScripts.js" defer></script>
+    <title>Pago</title>
+</head>
+<body>
+    <form id="formulario_pago">
+        <table>
+            <tr>
+                <td>Correo de contacto</td>
+                <td><input type="text" id="correo_cliente" name="correo_cliente" required></td>
+            </tr>
+            <tr>
+                <td>Enviar a</td>
+                <td><input type="text" id="direccion_cliente" name="direccion_cliente" required></td>
+            </tr>
+            <tr>
+                <td>Método de envío</td>
+                <td>Envío estándar 3,50€</td>
+            </tr>
+        </table>
+
+        <div class="pago">
+            <label for="metodo_pago">Método de pago</label>
+            <select id="metodo_pago" name="metodo_pago" onchange="mostrarOcultarCampos()">
+                <option value="preventDefault">Seleccione una opcion</option>
+                <option value="tarjeta_de_credito">Tarjeta de crédito</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+
+        <!-- Campos para pagar con tarjeta -->
+        <div id="camposTarjeta" class="hidden">
+            <label for="numero_tarjeta">Número de tarjeta</label>
+            <input type="text" id="numero_tarjeta" name="numero_tarjeta" required>
+
+            <label for="nombre_tarjeta">Nombre en la tarjeta</label>
+            <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" required>
+
+            <label for="fecha_expiracion">Fecha de expiración</label>
+            <input type="text" id="fecha_expiracion" name="fecha_expiracion" placeholder="MM/AA" required>
+
+            <label for="codigo_seguridad">Código de seguridad</label>
+            <input type="text" id="codigo_seguridad" name="codigo_seguridad" required>
+        </div>
+
+        <!-- Campos para pagar con PayPal -->
+        <div id="camposPayPal" class="hidden">
+            <label for="correo_paypal">Correo de PayPal</label>
+            <input type="text" id="correo_paypal" name="correo_paypal" required>
+        </div>
+
+        <button type="button" onclick="realizarPago()">Pagar</button>
+    </form>
+
+    
+</body>
+</html>

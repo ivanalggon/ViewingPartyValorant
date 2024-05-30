@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Event</title>
+    <link rel="stylesheet" href="../css/styleUpdateEvents.css">
+    <script src="../js/crud.js" defer></script>
+    <script src="../js/editEvents.js" defer></script>
+</head>
+
+<body>
+    <form name="updateEventForm" id="updateEventForm">
+        <input type="hidden" name="id_event" id="editIdEvent" required>
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" name="editName" required>
+
+        <label for="editDescription">Description:</label>
+        <textarea id="editDescription" name="editDescription" rows="4" required></textarea>
+
+        <label for="editStock">Stock:</label>
+        <input type="number" id="editStock" name="editStock" required>
+
+        <label for="editLocation">Location:</label>
+        <input type="text" id="editLocation" name="editLocation" required>
+
+        <label for="editPrice">Price:</label>
+        <input type="number" id="editPrice" name="editPrice" step="0.01" required>
+
+        <label for="editDate">Date:</label>
+        <input type="date" id="editDate" name="editDate" required>
+
+        <label for="editHour">Hour:</label>
+        <input type="time" id="editHour" name="editHour" required>
+
+        <label for="editImage">Image:</label>
+        <input type="file" id="editImage" name="editImage" accept="image/*" required>
+
+        
+
+        <a href="viewEvents.html"><button type="button">Back to View</button></a>
+        <button type="submit">Update Event</button>
+    </form>
+</body>
+
+</html>

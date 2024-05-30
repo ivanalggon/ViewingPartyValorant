@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/reservas.css">
+    <script src="../js/reservas.js" defer></script>
+    <title>Página de Eventos</title>
+</head>
+
+<body>
+
+    <main>
+        <aside id="sidebar">
+            <div id="filter-container">
+                <h2>Filtrar Resultados</h2>
+                <label for="date-filter">Fecha:</label>
+                <input type="text" id="date-filter" placeholder="Selecciona una fecha">
+
+                <label for="tournament-filter">Tipo de Torneo:</label>
+                <select id="tournament-filter">
+                    <option value="liga">Liga</option>
+                    <option value="torneo">Torneo</option>
+                </select>
+
+                <label for="location-filter">Ubicación:</label>
+                <input type="text" id="location-filter" placeholder="Ciudad, País">
+
+                <label for="price-filter">Precio Máximo:</label>
+                <input type="number" id="price-filter" placeholder="Precio máximo">
+
+                <button id="apply-filter">Aplicar Filtro</button>
+            </div>
+        </aside>
+
+        <section id="main-content">
+            <!-- Tarjetas de eventos -->
+            <div class="event-card">
+                <img src="https://egamersworld.com/images/matchesV2/A/AOmH6ipoh.jpg" alt="Evento 1">
+                <div class="info">
+                    <h3>Evento 1</h3>
+                    <p>Fecha: DD/MM/AAAA</p>
+                    <p>Lugar: Ciudad, País</p>
+                    <button class="price-button" onclick="openPricePage('evento1')">Ver Precio por Persona</button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="https://egamersworld.com/images/matchesV2/A/AOmH6ipoh.jpg" alt="Evento 2">
+                <div class="info">
+                    <h3>Evento 2</h3>
+                    <p>Fecha: DD/MM/AAAA</p>
+                    <p>Lugar: Ciudad, País</p>
+                    <button class="price-button" onclick="openPricePage('evento2')">Ver Precio por Persona</button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="https://egamersworld.com/images/matchesV2/A/AOmH6ipoh.jpg" alt="Evento 2">
+                <div class="info">
+                    <h3>Evento 3</h3>
+                    <p>Fecha: DD/MM/AAAA</p>
+                    <p>Lugar: Ciudad, País</p>
+                    <button class="price-button" onclick="openPricePage('evento3')">Ver Precio por Persona</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="https://egamersworld.com/images/matchesV2/A/AOmH6ipoh.jpg" alt="Evento 2">
+                <div class="info">
+                    <h3>Evento 4</h3>
+                    <p>Fecha: DD/MM/AAAA</p>
+                    <p>Lugar: Ciudad, País</p>
+                    <button class="price-button" onclick="openPricePage('evento4')">Ver Precio por Persona</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

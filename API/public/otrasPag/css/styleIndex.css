@@ -1,0 +1,98 @@
+html{
+    /* al medio de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2e2e2e;
+    
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container > div {
+    margin: 20px;
+    padding: 20px;
+    background-color: #111111;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 0 0 10px #00000080;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto,
+.direccion_envio{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.contacto,
+.direccion_envio,
+.pago{
+    min-width: 200px;
+}
+
+.botones {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: #929292;
+    color: rgb(43, 43, 43);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #920000;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 3px #00000080;
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.3s;
+}
+button:hover {
+    color: #ff0000;
+    background-color: #6b6b6b;
+    font-weight: bold;
+}

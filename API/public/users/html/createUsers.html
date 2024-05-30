@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="../css/styleCreateUsers.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="formulary">
+        <h2>Create Users</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Mandar 0 para user y 1 para admin -->
+        <label for="role">Role</label>
+        <select name="role" id="role">
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select>
+
+
+        <button type="button" onclick="window.location.href='viewUsers.html'">Back to View</button>
+        <button type="button" onclick="submit(event)">Add User</button>
+    </div>
+</body>
+
+</html>

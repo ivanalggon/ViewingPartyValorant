@@ -1,0 +1,116 @@
+body {
+    background-color: #2e2e2e;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #b3b3b3;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 75px;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#panelDiv {
+    height: 150px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #7a7a7a;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000000;
+    width: 50%;
+    height: 75px;
+    margin: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: large;
+    font-weight: bold;
+}
+
+#usersButton {
+    background-color: #2b80ffc2;
+    padding: 8px 12px;
+    color: #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#usersButton:hover {
+    color: #ffffff;
+}
+
+#productsButton {
+    background-color: #ffa32b;
+    padding: 8px 12px;
+    color: #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#productsButton:hover {
+    color: #ffffff;
+}
+
+#eventsButton {
+    background-color: #2bff2b;
+    padding: 8px 12px;
+    color: #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#eventsButton:hover {
+    color: #ffffff;
+}
+
+#logoutButton {
+    background-color: #ff2b41c2;
+    color: #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: auto;
+    align-self: flex-end;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+#logoutButton:hover {
+    background-color: #ff0019dc;
+    color: #ffffff;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="../css/styleUpdateProducts.css">
+    <script src="../js/script.js" defer></script>
+    <script src="../js/editProduct.js" defer></script>
+    
+</head>
+
+<body>
+    <form name="updateProductForm" id="updateProductForm">
+        <input type="hidden" name="id_product" id="editIdProduct" required>
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" name="editName" required>
+
+        <label for="editDescription">Description:</label>
+        <textarea id="editDescription" name="editDescription" rows="4" required></textarea>
+
+        <label for="editStock">Stock:</label>
+        <input type="number" id="editStock" name="editStock" required>
+
+        <label for="editPrice">Price:</label>
+        <input type="number" id="editPrice" name="editPrice" step="0.01" required>
+
+        <a href="viewProducts.html"><button type="button">Back to View</button></a>
+        <button type="submit">Update Product</button>
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleEntradasPago.css">
+    <script src="../js/pagoEntradas.js" defer></script>
+
+    <title>Pago</title>
+</head>
+<body>
+    <form id="formulario_pago">
+        
+        <div class="pago">
+            <label for="metodo_pago">Método de pago</label>
+            <select id="metodo_pago" name="metodo_pago" onchange="mostrarOcultarCampos()">
+                <option value="preventDefault">Seleccione una opcion</option>
+                <option value="tarjeta_de_credito">Tarjeta de crédito</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+
+        <!-- Campos para pagar con tarjeta -->
+        <div id="camposTarjeta" class="hidden">
+            <label for="numero_tarjeta">Número de tarjeta</label>
+            <input type="text" id="numero_tarjeta" name="numero_tarjeta" required>
+
+            <label for="nombre_tarjeta">Nombre en la tarjeta</label>
+            <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" required>
+
+            <label for="fecha_expiracion">Fecha de expiración</label>
+            <input type="text" id="fecha_expiracion" name="fecha_expiracion" placeholder="MM/AA" required>
+
+            <label for="codigo_seguridad">Código de seguridad</label>
+            <input type="text" id="codigo_seguridad" name="codigo_seguridad" required>
+        </div>
+
+        <!-- Campos para pagar con PayPal -->
+        <div id="camposPayPal" class="hidden">
+            <label for="correo_paypal">Correo de PayPal</label>
+            <input type="text" id="correo_paypal" name="correo_paypal" required>
+        </div>
+
+        <button type="button" onclick="realizarPago()">Pagar</button>
+    </form>
+
+    <script>
+        function mostrarOcultarCampos() {
+            var metodoPago = document.getElementById("metodo_pago").value;
+            var camposTarjeta = document.getElementById("camposTarjeta");
+            var camposPayPal = document.getElementById("camposPayPal");
+
+            if (metodoPago === "tarjeta_de_credito") {
+                camposTarjeta.classList.remove("hidden");
+                camposPayPal.classList.add("hidden");
+            } else if (metodoPago === "paypal") {
+                camposTarjeta.classList.add("hidden");
+                camposPayPal.classList.remove("hidden");
+            } else {
+                camposTarjeta.classList.add("hidden");
+                camposPayPal.classList.add("hidden");
+            }
+        }
+
+        function realizarPago() {
+            // Realiza las validaciones adicionales que puedas necesitar
+            // antes de enviar el formulario
+
+            // Luego, puedes enviar el formulario programáticamente si todo está bien
+            document.getElementById("formulario_pago").submit();
+        }
+    </script>
+</body>
+</html>
