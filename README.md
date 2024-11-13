@@ -16,9 +16,16 @@ Para finalizar la instalación ejecutaremos en la terminal `npm install` y ya te
 
 ### Frontend
 
-Para arrancar el proyecto se debe ejecutar desde la ruta **Frontend** en terminal el comando `ng serve` y navegar a `http://localhost:4200/`.
+Para arrancar el proyecto se debe ejecutar desde la carpeta **Frontend** el comando `ng serve` y navegar a `http://localhost:4200/`.
 
 Si no se ha entrado a la carpeta saldrá un error de que no se encuentra el archivo angular.json, por lo que deberemos de poner `cd Frontend` para entrar a la carpeta y, ahora si, ejecutar el comando `ng serve` para arrancar el servidor de Angular Frontend.
+
+Si al hacer `ng serve` sale un error de que no se encuentra el comando, deberemos de instalar Angular CLI con el comando `npm install -g @angular/cli`. (Podemos ver la version de angular instalada con `npm angular-cli-v`).
+
+Si al hacer ng serve sale un error de *"la ejecución de scripts está deshabilitada en este sistema"* abrimos PowerShell como administrador y ponemos este comando y dandole a S para aceptar:
+
+```Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned```
+
 
 ### Backend
 
